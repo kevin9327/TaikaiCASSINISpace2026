@@ -1,0 +1,89 @@
+{
+  "competition": "TAIKAI x EUSPA — 12th CASSINI Hackathon: Space for Peace and Resilience",
+  "competition_url": "https://taikai.network/en/cassini/hackathons/space-for-peace-and-resilience",
+  "prize_pool_cash": "€9,000 EUR Cash (€5,000 1st, €3,000 2nd, €1,000 3rd) + 10 Local Hub Prizes",
+  "eu_space_assets_integrated": [
+    "Copernicus (Sentinel-1 C-Band SAR & Sentinel-2 MSI)",
+    "Galileo / EGNOS (OSNMA Cryptographic Navigation Authentication)",
+    "IRIS² (Sovereign Encrypted Satellite Communications)"
+  ],
+  "challenges_verified": 3,
+  "challenges": [
+    {
+      "challenge_id": "CASSINI-CH1",
+      "title": "Cybersecurity for Space-Based Strategic Enablers (Galileo OSNMA + Anti-Spoofing)",
+      "eu_space_assets": [
+        "Galileo OSNMA (E1B I/NAV)",
+        "EGNOS Integrity Channel"
+      ],
+      "tesla_root_commitment_hex": "96048a6399a442a0d31c3c50f8cc1602",
+      "authentic_prn_e11": {
+        "tesla_key_chain_verified": true,
+        "osnma_mac_tag": "2e04eb762536df12",
+        "osnma_authenticated": true
+      },
+      "spoofed_prn_e24_attack": {
+        "osnma_mac_rejected": true,
+        "pseudorange_residual_m": 485.0,
+        "flagged_channel_indices": [
+          4
+        ]
+      },
+      "verified": true
+    },
+    {
+      "challenge_id": "CASSINI-CH2",
+      "title": "Space-Enabled Crisis Response & Civil Resilience (Sentinel-1 SAR + Sentinel-2 NDWI)",
+      "eu_space_assets": [
+        "Copernicus Sentinel-1 C-Band SAR",
+        "Copernicus Sentinel-2 MSI",
+        "Galileo Emergency Search & Rescue"
+      ],
+      "inundated_corridors_isolated": [
+        "Depot_Alpha->Bridge_North",
+        "Depot_Alpha->Valley_Road",
+        "Valley_Road->Hospital_Central"
+      ],
+      "safe_convoy_route": [
+        "Depot_Alpha",
+        "Ridge_Pass",
+        "Hospital_Central"
+      ],
+      "safe_eta_minutes": 34.0,
+      "verified": true
+    },
+    {
+      "challenge_id": "CASSINI-CH3",
+      "title": "Countering Transnational Crime & Maritime Threats (Sentinel-1 CFAR + IRIS² Alert)",
+      "eu_space_assets": [
+        "Copernicus Sentinel-1 Maritime SAR",
+        "Galileo Timestamping",
+        "IRIS² Secure Satellite Comms"
+      ],
+      "cfar_threshold_sigma": 6.0,
+      "total_sar_ships_detected": 3,
+      "dark_vessels_flagged": [
+        {
+          "contact_id": "SAR-M02",
+          "lat": 36.2895,
+          "lon": 15.114,
+          "peak_vv_db": -2.8,
+          "ais_mmsi": null,
+          "cfar_z_score": 11.69
+        },
+        {
+          "contact_id": "SAR-M04",
+          "lat": 36.411,
+          "lon": 15.448,
+          "peak_vv_db": -3.5,
+          "ais_mmsi": null,
+          "cfar_z_score": 11.25
+        }
+      ],
+      "iris2_encrypted_dispatch_sha256": "219ca5b948a0824c61ae16d859ea011ca759eb9617b02c02c2367c15a64e4057",
+      "verified": true
+    }
+  ],
+  "verification_status": "PASSED_ALL_3_CASSINI_SPACE_DEFENSE_AND_RESILIENCE_TRACKS",
+  "sha256": "3d75a7b3daa8411506612ab6715779f2617a835bccfcc19025b3751bcc928b8e"
+}
